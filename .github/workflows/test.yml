@@ -3,10 +3,10 @@ on: push
 jobs:
  test:
    runs-on: ubuntu-latest
-    steps:
-     -name: Get code
-      uses: actions/chekcout@v3
-     -name: Intsall NodeJS
+   steps:
+    -name: Get code
+     uses: actions/chekcout@v3
+    -name: Install NodeJS
       uses: actions/setup-node@v3
 	with:
          node-version: 18
