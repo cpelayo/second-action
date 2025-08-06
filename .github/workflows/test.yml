@@ -1,16 +1,16 @@
 name: Test project
 on: push
 jobs:
-	test:
-		runs-on: ubuntu-latest
-		steps:
-			-name: Get code
-			 	uses:actions/chekcout@v3
-			-name: Intsall NodeJS
-				uses:actions/setup-node@v3
-				with:
-					node-version: 18
-			-name: Install dependecies
-				run: npm ci
-			-name: Run test
-				npm test
+ test:
+   runs-on: ubuntu-latest
+    steps:
+     -name: Get code
+      uses: actions/chekcout@v3
+     -name: Intsall NodeJS
+      uses: actions/setup-node@v3
+	with:
+         node-version: 18
+     -name: Install dependecies
+      run: npm ci
+     -name: Run test
+      run: npm test
